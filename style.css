@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+body {
+    background-color: rgb(46, 45, 45);
+}
+section .photo-wrapper{
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    align-content: center;
+}
+section .photo-wrapper .photo-list{
+    display: flex;
+    margin-left: -25rem;
+}
+section .photo-wrapper .photo-list li{
+    position: relative;
+    margin-left: 25rem;
+    display: block;
+    list-style: none;
+}
+section .photo-wrapper .photo-list li img{
+    width: 380px;
+    position: absolute;
+    left: 0;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+.btns{
+    display: flex;
+    justify-content: space-around;
+    margin-top: -9rem;
+}
+.dots{
+    display: flex;
+    justify-content: center;
+    transform: translate(5px, -108px);
+    font-size: 2rem;
+}
+li{
+    list-style: disc;
+    margin-left: 1rem;
+    color: white;
+    cursor: pointer;
+}
+.dots li:hover{
+    color: #2071ff ;
+}
+.space{
+    width: 5rem;
+}
+.push{
+    margin-left: 0;
+    transition: .8s;
+}
+
+/* styles for js start*/
+
+.btns .active{
+    position: relative;
+    height: 2rem;
+    width: 2rem;
+    border: none;
+    border-radius: 50%;
+    background: #2071ff;
+    color: white;
+    cursor: pointer;
+    z-index: 1;
+    margin: 0 5rem;
+}
+.disabled{
+    position: relative;
+    height: 2rem;
+    width: 2rem;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    z-index: -1;
+    margin: 0 5rem;
+    background-color: #145cdb7a;
+    
+}
+.active-dot{
+    color: #2071ff 
+}
+/* styles for js end*/
